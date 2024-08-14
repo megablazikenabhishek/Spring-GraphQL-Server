@@ -1,0 +1,20 @@
+type Query {
+    students: [Student]
+}
+
+type Mutation {
+    saveStudent(name: String!, age: Int!, email: String!): Status
+}
+
+type Student {
+    studentId: Int!
+    name: String!
+    age: Int!
+    email: String!
+}
+
+type Status {
+    success: Boolean!
+    message: String!
+    errDetails: String!
+}
