@@ -16,5 +16,5 @@ type Student {
 type Status {
     success: Boolean!
     message: String!
-    errDetails: String!
+    errDetails: String
 }
